@@ -1,13 +1,23 @@
 module.exports = function (start, end) {
-    var arr = new Array(end-start + 1).fill(true)
     
-    //loop for iterating the array
-    // assuming i=1 being start
-   for(var i=start; i<end)
-
-    arr.forEach( (value, i) => {
-        if(value == true){
-            console.log(i)
+    var arr = []
+    for(var k=2; k<=end; k++){
+        arr.push(k)
+    }
+    console.log(arr)
+    var startIndex=-1
+    for(var i=0; i<end-1; i++){
+        for(var count =2; count*arr[i]<=end; count++){
+            var index = arr.indexOf(arr[i]*count)
+            if(arr.indexOf(arr[i]*count) == -1){
+                continue
+            }
+            arr.splice(index,1)            
         }
-    })
+        if(arr[i]<start){
+            arr.splice(i,1)
+        }
+    }
+
+    console.log(arr)
 }
