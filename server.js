@@ -7,7 +7,7 @@ const sieve = require('./sieve')
 // sieve(2, 300)
 // console.timeEnd('timer')
 
-sieve(100, 200)
+sieve(0, 200)
 
 app.listen(3000, () => {
     console.log('server is running....')
