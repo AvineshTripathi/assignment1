@@ -1,6 +1,6 @@
 module.exports = function (start, end) {
     var key = start
-
+    var temp = []
     //loop for iterating all the numbers between start and end 
     for (; key<=end; key++){
 
@@ -11,14 +11,16 @@ module.exports = function (start, end) {
 
         //2 is only even number which is prime hence logging this to console and going to next key
         if(key == 2){
-            console.log(key)
+            temp.push(key)
             continue
         }
 
         if(isPrime(key)){
-            console.log(key)
+            temp.push(key)
         }
     }
+
+    return temp
 }
 
 

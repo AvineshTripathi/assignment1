@@ -5,8 +5,6 @@ module.exports = function (start, end) {
     for(var k=2; k<=end; k++){
         arr.push(k)
     }
-    console.log(arr)
-    var startIndex=-1
     for(var i=0; i<end-1; i++){
         for(var count =2; count*arr[i]<=end; count++){
             var index = arr.indexOf(arr[i]*count)
@@ -17,9 +15,9 @@ module.exports = function (start, end) {
         }
     }
     for(var m=0; m<arr.length; m++){
-        if(arr[m] >=start){
+        if(arr[m]>=start){
             farr.push(arr[m])
         }
     }
-    console.log(farr)
+    return farr
 }
