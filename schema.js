@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const data = mongoose.Schema({
-    prime : {
+    array : {
         type: [Number],
         required: true,
     },
@@ -9,7 +9,7 @@ const data = mongoose.Schema({
         type: mongoose.Decimal128,
         required: true,
     },
-    date: Date
+    date: string
 })
 
 

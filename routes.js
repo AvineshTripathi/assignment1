@@ -20,9 +20,10 @@ router.get('/sieve/', (req,res) => {
     var date = today.toISOString()
     var fin = {
         "array": k,
-        "execution time": t,
+        "execution": t,
         "date": date
     }
+    data.create(fin)
     res.send(fin)
 })
 
@@ -38,7 +39,7 @@ router.get('/intuition/', (req,res) => {
     var date = today.toISOString()
     var fin = {
         "array": k,
-        "execution time": t,
+        "execution": t,
         "date": date
     }
     res.send(fin)
