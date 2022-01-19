@@ -9,7 +9,10 @@ const data = mongoose.Schema({
         type: mongoose.Decimal128,
         required: true,
     },
-    date: string
+    date: {
+        type: String,
+        required: true
+    }
 })
 
 

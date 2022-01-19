@@ -42,6 +42,7 @@ router.get('/intuition/', (req,res) => {
         "execution": t,
         "date": date
     }
+    data.create(fin)
     res.send(fin)
     
 })
