@@ -5,15 +5,14 @@ const app = express()
 const mongoose = require('mongoose')
 require('dotenv').config()
 
+// connecting the mongoab with the URI
 mongoose.connect(process.env.URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
-   
-// console.time('timer')
-// sieve(2, 300)
-// console.timeEnd('timer')
+
 app.use(cors())
+//importing the routes and using it
 app.use(routes)
 
 app.listen(3000, () => {

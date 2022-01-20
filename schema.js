@@ -5,6 +5,10 @@ const data = mongoose.Schema({
         type: [Number],
         required: true,
     },
+    length: {
+        type: Number,
+        required: true,
+    },
     execution: {
         type: mongoose.Decimal128,
         required: true,
