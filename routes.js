@@ -5,7 +5,7 @@ const data = require('./schema')
 // this is for the entry req that a client makes 
 router.get('/', (req,res) => {
     res.setHeader('Content-type','text/html')
-    res.send('Congratulation!!! you are now connected<br><br>To get Prime numbers I have provided with two methods do a query as mentioned<br><br>1)Basic intuition - http://localhost:3000/intuition/?num1=x&num2=y<br>2)Sieve - http://localhost:3000/sieve/?num1=x&num=y')
+    res.send('Congratulation!!! you are now connected<br><br>To get Prime numbers query on the following url where "x" and "y" are the starting number and ending number respectively<br><br>Sieve - http://localhost:3000/sieve/?num1=x&num=y')
 })
 
 // this is for the sieve req 
