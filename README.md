@@ -1,5 +1,3 @@
-# assignment
-
 # assignments
 
 ## How to run this?
